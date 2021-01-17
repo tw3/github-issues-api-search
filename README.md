@@ -27,6 +27,6 @@ This is a simple web application to search and display [issues in Facebook's Rea
 ## Resources / Links
 
 * [Angular 11](https://angular.io/)
-* [Angular Material)(https://material.angular.io/): Material Design components for Angular
+* [Angular Material](https://material.angular.io/): Material Design components for Angular
 * [GitHub REST API](https://docs.github.com/en/rest)
 * [marked](https://www.npmjs.com/package/marked) npm library
