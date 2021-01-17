@@ -8,7 +8,7 @@ This is a simple web application to search and display [issues in Facebook's Rea
 
 ## Running Local Dev Server
 
-1. Install Node.js if you haven't already.
+1. Install [Node.js](https://nodejs.org/) if you haven't already.
 2. Clone project
   ```bash
   git clone https://github.com/tw3/github-issues-api-search.git
