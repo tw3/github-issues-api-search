@@ -1,0 +1,20 @@
+<ng-container *ngIf="searchItem">
+  <h2>{{ searchItem.title }}</h2>
+  <ng-container *ngIf="isLoading">
+    <mat-spinner diameter="50"></mat-spinner>
+  </ng-container>
+  <ng-container *ngIf="!isLoading && details">
+    <section>
+      <h3>Labels</h3>
+      <mat-chip-list>
+        <mat-chip *ngFor="let label of labels">{{ label.name }}</mat-chip>
+      </mat-chip-list>
+    </section>
+
+    <section>
+      <h3>Body</h3>
+      <mat-card [innerHTML]="body"></mat-card>
+    </section>
+  </ng-container>
+</ng-container>
+

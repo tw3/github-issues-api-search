@@ -1,0 +1,28 @@
+<form [formGroup]="searchForm" class="search-form">
+  <mat-form-field class="full-width">
+    <mat-label>
+      Issue Title Search
+    </mat-label>
+    <input
+      [matAutocomplete]="auto"
+      formControlName="userInput"
+      matInput
+      type="text"/>
+    <mat-autocomplete
+      #auto="matAutocomplete"
+      [displayWith]="displaySearchOptionFn">
+      <ng-container *ngIf="isLoading">
+        <mat-option class="is-loading">
+          <mat-spinner diameter="50"></mat-spinner>
+        </mat-option>
+      </ng-container>
+      <ng-container *ngIf="!isLoading">
+        <mat-option
+          *ngFor="let option of options"
+          [value]="option">
+          {{ option.title }}
+        </mat-option>
+      </ng-container>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
