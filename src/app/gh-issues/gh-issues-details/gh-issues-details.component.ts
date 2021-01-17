@@ -3,7 +3,7 @@ import { GhIssuesSearchItem } from '../models/gh-issues-search-response.model';
 import { GhIssuesService } from '../_services/gh-issues.service';
 import { of as observableOf, Subject } from 'rxjs';
 import { catchError, debounceTime, distinctUntilChanged, map, switchMap, tap } from 'rxjs/operators';
-import * as marked from 'marked';
+import marked from 'marked';
 import { GhIssueDetailsLabel, GhIssueDetailsResponse } from '../models/gh-issue-details-response.model';
 
 @Component({
