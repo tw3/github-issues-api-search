@@ -1,35 +1,31 @@
 # Github Issues API Search
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+This is a simple web application to search and display [issues in Facebook's React repo](https://github.com/facebook/react/issues) using GitHub's REST API.
 
 ## Demo
 
 [Demo application](https://stackblitz.com/github/tw3/github-issues-api-search) hosted on stackblitz.
 
-## Development server
+## Running Local Dev Server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change
-any of the source files.
+1. Install Node.js if you haven't already.
+2. Clone project
+  ```bash
+  git clone https://github.com/tw3/github-issues-api-search.git
+  cd github-issues-api-search
+  ```
+3. Install dependencies
+  ```bash
+  npm install
+  ```
+4. Run web server
+  ```bash
+  ng serve
+  ```
+5. Navigate to `http://localhost:4200/` in your browser.
 
-## Code scaffolding
+## Resources / Links
 
-Run `ng generate component component-name` to generate a new component. You can also
-use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag
-for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out
-the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* [Angular 11](https://angular.io/)
+* [marked](https://www.npmjs.com/package/marked) npm library
+* [GitHub REST API](https://docs.github.com/en/rest)
